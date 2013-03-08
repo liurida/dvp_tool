@@ -1,0 +1,30 @@
+<a href='#dvp-tester-<%= item.id%> ' role='button'  data-toggle='modal'>
+  <%= icon_style %>
+</a>
+<!-- Tester form  -->
+<div id='<%= "dvp-tester-#{item.id}" %>' class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel"><%= item %> </h3>
+  </div>
+  <div class="modal-body">
+    <%= simple_form_for(item.testings.last) do |f| %>
+      <%= f.error_notification %>
+
+      <div class="form-inputs">
+        <%= f.association :dvp, :as => :hidden%>
+        <%= f.input :test_passed_yn, :hint => 'Input Y or N' %>
+        <%= f.input :test_comment %>
+      </div>
+
+      <div class="form-actions">
+        <input type="hidden" name='return_uri' value='<%= request.path %> '>
+        <%= f.button :submit %>
+      </div>
+    <% end %>
+
+  </div>
+</div>
+<!-- Tester form end -->
+

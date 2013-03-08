@@ -1,0 +1,22 @@
+Comments
+<% if @comments %>
+  <table class="table table-condensed" >
+    <% @comments.each do |item| %>
+      <tr>
+        <td width="60">
+          <small class="muted">
+            <%= item.user.email %>
+          </small>
+        </td>
+        <td>
+          <%= item.body %>
+        </td>
+        <td>
+          <small class="muted pull-right">
+            <%= time_ago_in_words(item.created_at) %> ago
+          </small>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+  <% end %>

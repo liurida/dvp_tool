@@ -1,0 +1,39 @@
+<h5> Testing process </h5>
+
+<table class="table table-bordered table-consented">
+  <tr>
+    <!--
+    <th>Dvp</th>
+    -->
+    <th>Requested by</th>
+    <th>Requested at</th>
+    <th>Request comment</th>
+    <th>Tested by</th>
+    <th>Tested at</th>
+    <th>Test passed yn</th>
+    <th>Test comment</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% records.each do |testing| %>
+  <tr>
+    <!-- <td><%= testing.dvp %></td> -->
+    <td><%= testing.requested_by %></td>
+    <td><%= testing.requested_at %></td>
+    <td><%= testing.request_comment %></td>
+    <td><%= testing.tested_by %></td>
+    <td><%= testing.tested_at %></td>
+    <td><%= testing.test_passed_yn %></td>
+    <td><%= testing.test_comment %></td>
+    <td><%= link_to 'Show', testing %></td>
+    <td><%= link_to 'Edit', edit_testing_path(testing) %></td>
+    <td><%= link_to 'Destroy', testing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Testing', new_testing_path %>

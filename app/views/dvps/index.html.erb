@@ -1,0 +1,39 @@
+<% if @dvps %>
+<div class="row-fluid">
+  <div class="span2 ">
+    <ul class="nav nav-pills nav-stacked">
+      <li class="nav-header">By role </li>
+      <li class="<%= "active" if session[:dvp_view] == 'default'%>">
+      <a href="?dvp_view=default">CTT</a>
+      </li>
+
+      <li class="<%= "active" if session[:dvp_view] == 'cda'%>">
+      <a href="?dvp_view=cda">CDA</a>
+      </li>
+      <li class="nav-header">By status</li>
+      <li> <a href="#" > ToBe Test </a></li>
+      <li> <a href="#" > ToBe Program </a></li>
+      <li> <a href="#" > All </a></li>
+
+    </ul>
+
+  </div>
+  <div class="span10">
+    <h4><%= @study.study_code %> </h4>
+
+    <div class="row-fluid">
+      Domain List:
+      <%= link_to 'All', study_dvp_path %> |
+          <% @dvp_domains.each  do |domain, domain_id| %>
+            <%= link_to domain, study_dvp_domain_path(:domain_id => domain_id) %> |
+          <% end %>
+    </div>
+    <% if params[:action] == 'index_domain' %>
+    <%= link_to('New Dvp', add_study_dvp_domain_path(:return_uri => request.path)) %>
+  <% else %>
+    <%= link_to('New Dvp', new_dvp_path(:study_id => @study.id,:return_uri => request.path)) %>
+  <% end %>
+    <%= render get_dvp_view %>
+  </div>
+</div>
+<% end %>

@@ -1,0 +1,45 @@
+
+<table class="table table-bordered table-condensed table-striped">
+  <tr>
+    <!-- diable
+    <th>Study</th>
+    -->
+    <th>Domain</th>
+    <th>Seq num</th>
+    <th>Description</th>
+    <th>Check method</th>
+    <th>Check type</th>
+    <th>Review type</th>
+    <th>Query message</th>
+    <th>Memo</th>
+    <th>Proc name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @dvps.each do |dvp| %>
+    <tr>
+      <!-- disable
+      <td><%= dvp.study %></td>
+      -->
+      <td><%= dvp.domain %></td>
+      <td><%= dvp.seq_num %></td>
+      <td><%= dvp.description %></td>
+      <td><%= dvp.check_method %></td>
+      <td><%= dvp.check_type %></td>
+      <td><%= dvp.review_type %></td>
+      <td><%= dvp.query_message %></td>
+      <td><%= dvp.memo %></td>
+      <td><%= dvp.proc_name %></td>
+      <td><%= link_to 'Show', dvp %></td>
+      <td><%= link_to 'Edit', edit_dvp_path(dvp) %></td>
+      <td><%= link_to 'Destroy', dvp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br />
+
+
+

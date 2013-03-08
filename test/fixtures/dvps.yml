@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  study: 
+  domain: 
+  seq_num: MyString
+  description: MyString
+  check_method: MyString
+  check_type: MyString
+  review_type: MyString
+  query_message: MyString
+  memo: MyString
+  proc_name: MyString
+
+two:
+  study: 
+  domain: 
+  seq_num: MyString
+  description: MyString
+  check_method: MyString
+  check_type: MyString
+  review_type: MyString
+  query_message: MyString
+  memo: MyString
+  proc_name: MyString

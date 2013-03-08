@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DvpTool</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row-fluid">
+                   <ul class="nav pull-right">
+                        <% if current_user %>
+                        <li>
+                         <%= current_user.email %>
+                        </li>
+                        <% end %>
+
+                        <% if current_user %>
+                        <li>
+                        <%= link_to(raw("<i class='icon-signout'></i>"),
+                            destroy_user_session_path,
+                            :method => :delete,
+                            :title => "Sign Out" )%>
+                        </li>
+                        <li>
+                        <%= link_to(raw("<i class='icon-key'></i>"),
+                         edit_registration_path(:user),
+                         :title => 'Change password') %>
+                        </li>
+                        <% else %>
+                        <li>
+                    <%= link_to(raw("<i class='icon-user'></i>"),
+                        new_registration_path(:user), :title => "Sign Up") %>
+                        </li>
+                        <li>
+                    <%= link_to(raw("<i class='icon-signin'></i>"),
+                        new_session_path(:user), :title => 'Sign In') %>
+                        </li>
+                        <% end %>
+
+                    </ul>
+
+
+    </div>
+    <div class="row-fluid">
+
+      <div class="span12">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

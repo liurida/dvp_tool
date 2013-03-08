@@ -1,0 +1,18 @@
+<%= simple_form_for(@testing) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :dvp %>
+    <%= f.association :requested_by %>
+    <%= f.input :requested_at %>
+    <%= f.input :request_comment %>
+    <%= f.association :tested_by %>
+    <%= f.input :tested_at %>
+    <%= f.input :test_passed_yn %>
+    <%= f.input :test_comment %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

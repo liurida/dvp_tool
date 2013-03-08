@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<table class="table table-bordered table-condensed table-striped ">
+  <caption><span class="strong"><%= @dvp.study %></span></caption>
+  <tr>
+    <th width="150"><span>Seq Num</span></th><td><%= @dvp.seq_num %></td>
+    <th>Check Method</th> <td> <%= @dvp.check_method %> </td>
+    <th>Check Type</th> <td><%= @dvp.check_type %> </td>
+    <th>Review </th> <td> <%= @dvp.review_type %> </td>
+  </tr>
+
+  <tr>
+    <th>Description</th> <td colspan="7"><%= @dvp.description  %> </td>
+  </tr>
+  <tr>
+    <th>Query Message</th> <td colspan="7"><%= @dvp.query_message  %> </td>
+  </tr>
+  <tr>
+    <th>Procedure Name</th> <td colspan="7"><%= @dvp.proc_name %> </td>
+  </tr>
+  <tr>
+    <th>CTOM Memo </th> <td colspan="7"><%= @dvp.memo   %> </td>
+  </tr>
+  <tr>
+    <td colspan="8">
+    <span class="pull-left">
+      <small class="muted"> Last updated at <%= @dvp.updated_at %>  </small>
+    </span>
+    <span class="pull-right">
+<%= link_to 'Edit', edit_dvp_path(@dvp) %> |
+<%= link_to 'Back', dvps_path({:study_id => @dvp.study.id}) %>
+    </span>
+  </td>
+  </tr>
+
+</table>
+
+<%= list_dvp_testings(@dvp) %>
+
+
+<%= comment_form(@dvp) %>
+<%= get_comments(@dvp) %>
+

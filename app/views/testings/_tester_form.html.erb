@@ -1,0 +1,13 @@
+<%= simple_form_for(@testing) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :dvp, :as => :hidden%>
+    <%= f.input :test_passed_yn, :hint => 'Input Y or N' %>
+    <%= f.input :test_comment %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

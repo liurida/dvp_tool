@@ -1,0 +1,31 @@
+<h5> Testing process </h5>
+
+<%= link_to 'Click if proc created/udated', new_testing_path(:dvp_id => @dvp.id, :return_uri => request.path) %>
+<table class="table table-bordered table-consented">
+<% records.each do |testing| %>
+  <tr>
+    <td>
+      <small>
+        Programmed by <%= testing.requested_by %> at <%= testing.requested_at.to_date %></br>
+        Comment: <%= testing.request_comment %>
+      </small>
+    </td>
+    <td>
+      <small>
+      <% if testing.tested_at %>
+        Tested by <%= testing.tested_by %> at <%= testing.tested_at %> with <%= test_status_label(testing.test_passed_yn) %>
+        </br>
+        Comment: <%= testing.test_comment %>
+      <% else %>
+        <%= link_to 'Click if tested', edit_testing_path(testing, :return_uri => request.path) %></td>
+      <% end %>
+    </small>
+    </td>
+    <td><%= link_to 'Edit', edit_testing_path(testing, :return_uri => request.url) %></td>
+     <td><%= link_to 'Destroy', testing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

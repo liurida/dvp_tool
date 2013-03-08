@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Dvp:</b>
+  <%= @testing.dvp %>
+</p>
+
+<p>
+  <b>Requested by:</b>
+  <%= @testing.requested_by %>
+</p>
+
+<p>
+  <b>Requested at:</b>
+  <%= @testing.requested_at %>
+</p>
+
+<p>
+  <b>Request comment:</b>
+  <%= @testing.request_comment %>
+</p>
+
+<p>
+  <b>Tested by:</b>
+  <%= @testing.tested_by %>
+</p>
+
+<p>
+  <b>Tested at:</b>
+  <%= @testing.tested_at %>
+</p>
+
+<p>
+  <b>Test passed yn:</b>
+  <%= @testing.test_passed_yn %>
+</p>
+
+<p>
+  <b>Test comment:</b>
+  <%= @testing.test_comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_testing_path(@testing) %> |
+<%= link_to 'Back', testings_path %>

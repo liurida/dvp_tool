@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  dvp: 
+  requested_by: 
+  requested_at: 2013-02-28 14:03:15
+  request_comment: MyString
+  tested_by: 
+  tested_at: 2013-02-28 14:03:15
+  test_passed_yn: false
+  test_comment: MyString
+
+two:
+  dvp: 
+  requested_by: 
+  requested_at: 2013-02-28 14:03:15
+  request_comment: MyString
+  tested_by: 
+  tested_at: 2013-02-28 14:03:15
+  test_passed_yn: false
+  test_comment: MyString

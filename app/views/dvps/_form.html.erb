@@ -1,0 +1,26 @@
+<%= simple_form_for(@dvp, :html => {:class => "form-horizontal"}) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :study, :input_html => {:class => 'input-medium'} %>
+    <%= f.association :domain, :input_html => {:class => 'input-mini'}  %>
+    <%= f.input :seq_num, :input_html => {:class => 'input-small'} %>
+    <%= f.input :description, as: :text,
+                input_html: {class: 'input-xxlarge', size: '2x2'} %>
+    <%= f.input :check_method,
+                collection: Dvp::CHECK_METHOD,
+                input_html: {class: 'input-medium'} %>
+    <%= f.input :check_type,
+                collection: Dvp::CHECK_TYPE,
+                input_html: {class: 'input-medium'} %>
+    <%= f.input :review_type, collection: Dvp::REVIEW_TYPE,
+                 input_html: {class: 'input-medium'} %>
+    <%= f.input :query_message %>
+    <%= f.input :memo %>
+    <%= f.input :proc_name %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

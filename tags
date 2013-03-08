@@ -1,0 +1,84 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ActiveSupport	.\test\test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+ActsAsCommentableWithThreadingMigration	.\db\migrate\20130224095230_acts_as_commentable_with_threading_migration.rb	/^class ActsAsCommentableWithThreadingMigration < ActiveRecord::Migration$/;"	c
+Application	.\config\application.rb	/^  class Application < Rails::Application$/;"	c	class:DvpTool
+ApplicationController	.\app\controllers\application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	.\app\helpers\application_helper.rb	/^module ApplicationHelper$/;"	m
+BrowsingTest	.\test\performance\browsing_test.rb	/^class BrowsingTest < ActionDispatch::PerformanceTest$/;"	c
+Comment	.\app\models\comment.rb	/^class Comment < ActiveRecord::Base$/;"	c
+CommentController	.\app\controllers\comment_controller.rb	/^class CommentController < ApplicationController$/;"	c
+CommentControllerTest	.\test\functional\comment_controller_test.rb	/^class CommentControllerTest < ActionController::TestCase$/;"	c
+CommentHelper	.\app\helpers\comment_helper.rb	/^module CommentHelper$/;"	m
+CommentHelperTest	.\test\unit\helpers\comment_helper_test.rb	/^class CommentHelperTest < ActionView::TestCase$/;"	c
+CreateDomains	.\db\migrate\20130223122750_create_domains.rb	/^class CreateDomains < ActiveRecord::Migration$/;"	c
+CreateEditCheckInfos	.\db\migrate\20130223123316_create_edit_check_infos.rb	/^class CreateEditCheckInfos < ActiveRecord::Migration$/;"	c
+CreateStudies	.\db\migrate\20130223122818_create_studies.rb	/^class CreateStudies < ActiveRecord::Migration$/;"	c
+DeviseCreateUsers	.\db\migrate\20130224092358_devise_create_users.rb	/^class DeviseCreateUsers < ActiveRecord::Migration$/;"	c
+Domain	.\app\models\domain.rb	/^class Domain < ActiveRecord::Base$/;"	c
+DomainTest	.\test\unit\domain_test.rb	/^class DomainTest < ActiveSupport::TestCase$/;"	c
+DomainsController	.\app\controllers\domains_controller.rb	/^class DomainsController < ApplicationController$/;"	c
+DomainsControllerTest	.\test\functional\domains_controller_test.rb	/^class DomainsControllerTest < ActionController::TestCase$/;"	c
+DomainsHelper	.\app\helpers\domains_helper.rb	/^module DomainsHelper$/;"	m
+DomainsHelperTest	.\test\unit\helpers\domains_helper_test.rb	/^class DomainsHelperTest < ActionView::TestCase$/;"	c
+DvpTool	.\config\application.rb	/^module DvpTool$/;"	m
+EditCheckInfo	.\app\models\edit_check_info.rb	/^class EditCheckInfo < ActiveRecord::Base$/;"	c
+EditCheckInfoTest	.\test\unit\edit_check_info_test.rb	/^class EditCheckInfoTest < ActiveSupport::TestCase$/;"	c
+EditCheckInfosController	.\app\controllers\edit_check_infos_controller.rb	/^class EditCheckInfosController < ApplicationController$/;"	c
+EditCheckInfosControllerTest	.\test\functional\edit_check_infos_controller_test.rb	/^class EditCheckInfosControllerTest < ActionController::TestCase$/;"	c
+EditCheckInfosHelper	.\app\helpers\edit_check_infos_helper.rb	/^module EditCheckInfosHelper$/;"	m
+EditCheckInfosHelperTest	.\test\unit\helpers\edit_check_infos_helper_test.rb	/^class EditCheckInfosHelperTest < ActionView::TestCase$/;"	c
+StudiesController	.\app\controllers\studies_controller.rb	/^class StudiesController < ApplicationController$/;"	c
+StudiesControllerTest	.\test\functional\studies_controller_test.rb	/^class StudiesControllerTest < ActionController::TestCase$/;"	c
+StudiesHelper	.\app\helpers\studies_helper.rb	/^module StudiesHelper$/;"	m
+StudiesHelperTest	.\test\unit\helpers\studies_helper_test.rb	/^class StudiesHelperTest < ActionView::TestCase$/;"	c
+Study	.\app\models\study.rb	/^class Study < ActiveRecord::Base$/;"	c
+StudyTest	.\test\unit\study_test.rb	/^class StudyTest < ActiveSupport::TestCase$/;"	c
+User	.\app\models\user.rb	/^class User < ActiveRecord::Base$/;"	c
+UserTest	.\test\unit\user_test.rb	/^class UserTest < ActiveSupport::TestCase$/;"	c
+about	.\public\index.html	/^      function about() {$/;"	f
+build_from	.\app\models\comment.rb	/^  def self.build_from(obj, user_id, comment)$/;"	F	class:Comment
+change	.\db\migrate\20130223122750_create_domains.rb	/^  def change$/;"	f	class:CreateDomains
+change	.\db\migrate\20130223122818_create_studies.rb	/^  def change$/;"	f	class:CreateStudies
+change	.\db\migrate\20130223123316_create_edit_check_infos.rb	/^  def change$/;"	f	class:CreateEditCheckInfos
+change	.\db\migrate\20130224092358_devise_create_users.rb	/^  def change$/;"	f	class:DeviseCreateUsers
+comment_form	.\app\helpers\application_helper.rb	/^  def comment_form$/;"	f	class:ApplicationHelper
+create	.\app\controllers\comment_controller.rb	/^  def create$/;"	f	class:CommentController
+create	.\app\controllers\domains_controller.rb	/^  def create$/;"	f	class:DomainsController
+create	.\app\controllers\edit_check_infos_controller.rb	/^  def create$/;"	f	class:EditCheckInfosController
+create	.\app\controllers\studies_controller.rb	/^  def create$/;"	f	class:StudiesController
+create_comment	.\app\controllers\edit_check_infos_controller.rb	/^  def create_comment$/;"	f	class:EditCheckInfosController
+destroy	.\app\controllers\comment_controller.rb	/^  def destroy$/;"	f	class:CommentController
+destroy	.\app\controllers\domains_controller.rb	/^  def destroy$/;"	f	class:DomainsController
+destroy	.\app\controllers\edit_check_infos_controller.rb	/^  def destroy$/;"	f	class:EditCheckInfosController
+destroy	.\app\controllers\studies_controller.rb	/^  def destroy$/;"	f	class:StudiesController
+domain_list	.\app\helpers\application_helper.rb	/^  def domain_list$/;"	f	class:ApplicationHelper
+down	.\db\migrate\20130224095230_acts_as_commentable_with_threading_migration.rb	/^  def self.down$/;"	F	class:ActsAsCommentableWithThreadingMigration
+edit	.\app\controllers\domains_controller.rb	/^  def edit$/;"	f	class:DomainsController
+edit	.\app\controllers\edit_check_infos_controller.rb	/^  def edit$/;"	f	class:EditCheckInfosController
+edit	.\app\controllers\studies_controller.rb	/^  def edit$/;"	f	class:StudiesController
+find_commentable	.\app\models\comment.rb	/^  def self.find_commentable(commentable_str, commentable_id)$/;"	F	class:Comment
+get_comments	.\app\helpers\application_helper.rb	/^  def get_comments(obj)$/;"	f	class:ApplicationHelper
+has_children?	.\app\models\comment.rb	/^  def has_children?$/;"	f	class:Comment
+index	.\app\controllers\domains_controller.rb	/^  def index$/;"	f	class:DomainsController
+index	.\app\controllers\edit_check_infos_controller.rb	/^  def index$/;"	f	class:EditCheckInfosController
+index	.\app\controllers\studies_controller.rb	/^  def index$/;"	f	class:StudiesController
+new	.\app\controllers\comment_controller.rb	/^  def new$/;"	f	class:CommentController
+new	.\app\controllers\domains_controller.rb	/^  def new$/;"	f	class:DomainsController
+new	.\app\controllers\edit_check_infos_controller.rb	/^  def new$/;"	f	class:EditCheckInfosController
+new	.\app\controllers\studies_controller.rb	/^  def new$/;"	f	class:StudiesController
+show	.\app\controllers\domains_controller.rb	/^  def show$/;"	f	class:DomainsController
+show	.\app\controllers\edit_check_infos_controller.rb	/^  def show$/;"	f	class:EditCheckInfosController
+show	.\app\controllers\studies_controller.rb	/^  def show$/;"	f	class:StudiesController
+test_homepage	.\test\performance\browsing_test.rb	/^  def test_homepage$/;"	f	class:BrowsingTest
+to_s	.\app\models\domain.rb	/^  def to_s$/;"	f	class:Domain
+to_s	.\app\models\edit_check_info.rb	/^  def to_s$/;"	f	class:EditCheckInfo
+to_s	.\app\models\study.rb	/^  def to_s$/;"	f	class:Study
+up	.\db\migrate\20130224095230_acts_as_commentable_with_threading_migration.rb	/^  def self.up$/;"	F	class:ActsAsCommentableWithThreadingMigration
+update	.\app\controllers\domains_controller.rb	/^  def update$/;"	f	class:DomainsController
+update	.\app\controllers\edit_check_infos_controller.rb	/^  def update$/;"	f	class:EditCheckInfosController
+update	.\app\controllers\studies_controller.rb	/^  def update$/;"	f	class:StudiesController

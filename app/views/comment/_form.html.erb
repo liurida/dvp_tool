@@ -1,0 +1,10 @@
+<!-- comment form -->
+<%= form_tag("/comment/create/#{@model_name}/#{@obj_id}") do %>
+  <%= hidden_field_tag(:model_name, @model_name) %>
+  <%= hidden_field_tag(:next_url, request.url) %>
+  Say: <%= text_area_tag(:comment,"", :placeholder => "Comment",
+                        :class => "input-xlarge", :size => "1x1") %>
+  <%= submit_tag("Add") %>
+
+<% end %>
+
